@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Confirmação de Presença - Dados</title>
+  <style>
+    table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+    th, td {
+      border: 1px solid #dddddd;
+      text-align: left;
+      padding: 8px;
+    }
+    th {
+      background-color: #f2f2f2;
+    }
+  </style>
+</head>
+<body>
+  <h1>Confirmação de Presença - Dados</h1>
+  <table id="C:/Users/sazev/OneDrive/Área%20de%20Trabalho/Dê%20sua%20Presença.html">
+    <tr>
+      <th>Nome</th>
+      <th>Status</th>
+      <th>Horário</th>
+    </tr>
+  </table>
+
+  <script>
+    const urlParams = new URLSearchParams(C:/Users/sazev/OneDrive/%C3%81rea%20de%20Trabalho/D%C3%AA%20sua%20Presen%C3%A7a.html);
+    const name = urlParams.get('name');
+    const status = urlParams.get('status');
+    const time = urlParams.get('time');
+
+    const table = document.getElementById('attendanceTable');
+    const row = table.insertRow();
+    const nameCell = row.insertCell();
+    const statusCell = row.insertCell();
+    const timeCell = row.insertCell();
+    nameCell.textContent = name;
+    statusCell.textContent = status;
+    timeCell.textContent = time;
+  </script>
+</body>
+</html>
